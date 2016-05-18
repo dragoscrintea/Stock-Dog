@@ -8,11 +8,11 @@
     </div>
 
     <div class="panel-body">
-        <div ng-if="!Watchlists.length" class="text-center">
+        <div ng-if="!watchlists.length" class="text-center">
             Use <span class="glyphicon glyphicon-plus"></span> to create a list
         </div>
         <div class="list-group">
-            <a class="list-group-item" ng-repeat="list in Watchlists track by $index">
+            <a class="list-group-item" ng-repeat="list in watchlists track by $index">
                 {{ list.name }}
                 <button type="button" class="close" ng-click="deleteList(list)">
                     &times;
