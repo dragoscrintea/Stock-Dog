@@ -13,8 +13,7 @@
             .state('watchlist', {
                 url: '/watchlist/:listId',
                 templateUrl: 'app/watchlist/views/watchlist.html',
-                //controller: 'WatchlistController',
-                //controllerAs: 'wc',
+                controller: 'WatchlistController',
                 data : {
                     pageTitle: 'Dashboard | Watchlist'
                 }

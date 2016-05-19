@@ -6,6 +6,7 @@
         [
             'ui.router',
             'mgcrea.ngStrap',
+            'stockDogApp.core',
             'stockDogApp.watchlist',
             'stockDogApp.dashboard'
 

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('stockDogApp')
+        .module('stockDogApp.watchlist')
         .directive('stkWatchlistPanel', ['$location','$state', '$modal', '$stateParams', 'WatchlistService',
             function($location, $state, $modal, $stateParams, WatchlistService) {
             return {
@@ -13,7 +13,7 @@
                     $scope.watchlist = {};
                     var addListModal = $modal({
                        scope: $scope,
-                       template: 'app/watchlist/views/addlist-modal.html',
+                       templateUrl: 'app/watchlist/views/addlist-modal.html',
                        show: false
                     });
 
