@@ -12,7 +12,10 @@
             Use <span class="glyphicon glyphicon-plus"></span> to create a list
         </div>
         <div class="list-group">
-            <a class="list-group-item" ng-repeat="list in watchlists track by $index">
+            <a class="list-group-item"
+                ng-class="{active: currentList == list.id}"
+                ng-repeat="list in watchlists track by $index"
+                ui-sref="watchlist({listId: list.id})">
                 {{ list.name }}
                 <button type="button" class="close" ng-click="deleteList(list)">
                     &times;

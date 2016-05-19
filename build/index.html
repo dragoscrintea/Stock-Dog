@@ -34,7 +34,7 @@
                                     No lists found
                                 </li>
                                 <li ng-repeat="list in watchlists track by $index">
-                                    <a href="/#/watchlist/{{ list.id}}">
+                                    <a ui-sref="watchlist({listId: list.id})">
                                         {{ list.name }}
                                     </a>
                                 </li>

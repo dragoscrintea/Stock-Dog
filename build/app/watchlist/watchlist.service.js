@@ -32,9 +32,6 @@
 
         // return all watchlists or by given id
         this.query = function(listId) {
-
-            console.log("query initiated");
-
             if(listId) {
                 return findById(listId);
             }

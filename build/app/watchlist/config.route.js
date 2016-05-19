@@ -10,10 +10,11 @@
     function configFunction($stateProvider) {
 
         $stateProvider
-            .state('/watchlist/:listId', {
+            .state('watchlist', {
+                url: '/watchlist/:listId',
                 templateUrl: 'app/watchlist/views/watchlist.html',
-                controller: 'WatchlistController',
-                controllerAs: 'wc',
+                //controller: 'WatchlistController',
+                //controllerAs: 'wc',
                 data : {
                     pageTitle: 'Dashboard | Watchlist'
                 }

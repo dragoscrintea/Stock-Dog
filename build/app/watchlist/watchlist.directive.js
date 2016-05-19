@@ -3,8 +3,8 @@
 
     angular
         .module('stockDogApp')
-        .directive('stkWatchlistPanel', ['$location', '$modal', 'WatchlistService',
-            function($location, $modal, WatchlistService) {
+        .directive('stkWatchlistPanel', ['$location','$state', '$modal', '$stateParams', 'WatchlistService',
+            function($location, $state, $modal, $stateParams, WatchlistService) {
             return {
                 templateUrl: 'app/watchlist/views/watchlist-panel.html',
                 restrict: 'E',
@@ -33,6 +33,9 @@
                         WatchlistService.remove(list);
                         $location.path('/');
                     }
+                    
+                    $scope.currentList = $stateParams.listId;
+                    
                 }
             };
 
