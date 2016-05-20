@@ -8,7 +8,8 @@
             'mgcrea.ngStrap',
             'stockDogApp.core',
             'stockDogApp.watchlist',
-            'stockDogApp.dashboard'
+            'stockDogApp.dashboard',
+            'stockDogApp.stocktable'
 
         ])
         .config(configFunction)
